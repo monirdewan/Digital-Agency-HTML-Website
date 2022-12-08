@@ -1,0 +1,44 @@
+.blog-area{
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 30px;
+        .blog-img{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .blog-meta{
+               background-color: #fff;
+               border: 1px solid #ddd;
+               margin: 0 25px;
+               display: flex;
+               justify-content: space-evenly;
+               padding: 15px 0;
+               margin-top: -25px;
+               margin-bottom: 25px;
+               position: relative;
+               a{
+                text-transform: lowercase;
+                font-size: 16px;
+               }
+            }
+        }
+        h4{
+            text-transform: capitalize;
+            font-size: 26px;
+            margin: 20px 0;
+        }
+        p{
+            margin: 20px 0;
+        }
+        a{
+            text-transform: capitalize;
+            font-size: 18px;
+            transform: .3s;
+            &:hover{
+                color: #ff7720;
+            }
+        }
+    }
+}

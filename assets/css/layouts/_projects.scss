@@ -1,0 +1,59 @@
+.project-area{
+    .projects{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        .single-project{
+            background-position: center;
+            background-size: cover;
+            height: 300px;
+            position: relative;
+            z-index: 2;
+            
+            &:hover{
+               .project-content{
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+               }
+            }
+            .project-content{
+               position: absolute;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               width: 100%;
+               height: 100%;
+               color: #fff;
+               z-index: 2;
+               transition: .3s;
+               visibility: hidden;
+               opacity: 0;
+               transform: scale(0);
+               
+               &:before{
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: #333;
+                z-index: -1;
+                opacity: .75;}
+            a{
+                font-size: 26px;
+                color: #fff;
+            }
+            h4{
+                text-transform: capitalize;
+                margin-top: 10px;
+                text-align: center;
+                span{
+                    display: block;
+                    font-size: 16px;
+                    text-transform: lowercase;
+                }
+            }
+            }
+        }
+    }
+}

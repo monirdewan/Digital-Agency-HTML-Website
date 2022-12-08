@@ -1,0 +1,53 @@
+.header-area{
+    padding: 25px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    transition: .3s;
+    &.sticky{
+        background-color: #333;
+        padding: 20px;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: 15% 80%;
+        grid-gap: 5%;
+        align-items: center;
+        .logo a{
+            text-transform: capitalize;
+            font-size: 30px;
+            font-weight: 700;
+            color: #fff;
+        }
+        .menu{
+            ul{
+                display: flex;
+                justify-content: flex-end;
+                li{
+                    &.curent{
+                        a{
+                            color: #ff7720;
+                        }
+                    }
+                    a{
+                        font-size: 18px;
+                        text-transform: capitalize;
+                        margin-left: 15px;
+                        display: block;
+                        transition: .3s;
+                        padding: 5px;
+                        color: #fff;
+                        &:hover{
+                            color: #ff7720;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.slicknav_menu{
+    display: none;
+}
+
