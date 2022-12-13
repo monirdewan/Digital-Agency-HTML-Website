@@ -3,6 +3,7 @@ $(document).ready(function(){
     $('#nav').onePageNav({
         currentClass:'curent',
     });
+
     //Magnipic Popup Active
     $('.project-popup').magnificPopup({
         type:'image',
@@ -10,6 +11,7 @@ $(document).ready(function(){
             enabled:'true'
         }
     });
+
     //Video Popup Active by Mafnipic Popup
     $('.video-popup').magnificPopup({
         type:'iframe',
@@ -20,9 +22,8 @@ $(document).ready(function(){
 
     $('#nav').slicknav();
     //Counter Up  Active
-    $('.counterup').counterUp({
-       
-    });
+    $('.counterup').counterUp();
+
     //Slick Slider Active
     $('.slider-item').slick({
         infinite: true,
@@ -52,6 +53,7 @@ $(document).ready(function(){
         prevArrow:'<button type="button" class="slick-prev"><i class="fas fa-long-arrow-alt-left"></i></button>',
         nextArrow:'<button type="button" class="slick-next"><i class="fas fa-long-arrow-alt-right"></i></button>',
       });
+      
       // Header Sticky Menu 
     $(window).on('scroll', function(){
         if($(this).scrollTop() >50){

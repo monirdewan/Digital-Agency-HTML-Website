@@ -1,4 +1,8 @@
+/*Responsive for all device CSS*/
+
+
 /*Desktop Layout 992px*/
+
 @media only screen and (min-width:992px) and (max-width:1200px) {
     .container{
         width:970px;
@@ -199,18 +203,29 @@
     }
    .banner-area{
     text-align: center;
+    height: 70vh;
     .banner-content{
+        height: 70vh;
         h1{
             font-size: 30px;
             line-height: 30px;
+        }
+        h4{
+            margin-top: 50px;
         }
     }
    }
 
    .about-area{
+    padding-bottom: 50px;
     .about{
         grid-template-columns: auto;
         row-gap: 30px;
+        .about-img{
+            &:after{
+                display: none;
+            }
+        }
         .about-content{
             text-align: center;
            
@@ -222,6 +237,9 @@
         }
    }
 .feature-area{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
     &:before, &:after{
         display: none;
     }
@@ -236,9 +254,17 @@
 }
 
 .service-area{
+    padding-top: 50px;
+    padding-bottom: 50px;
     .services{
         grid-template-columns: auto;
             row-gap: 30px;
+            .single-service{
+                padding: 20px 10px;
+                h4{
+                    margin: 10px 0 5px;
+                }
+            }
     }
 }
 
