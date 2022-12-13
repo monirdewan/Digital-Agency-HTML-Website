@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     $('#nav').slicknav();
     //Counter Up  Active
-    $('.counter-section').counterUp({
+    $('.counterup').counterUp({
        
     });
     //Slick Slider Active
