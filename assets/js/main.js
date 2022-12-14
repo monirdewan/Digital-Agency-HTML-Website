@@ -32,23 +32,29 @@ $(document).ready(function(){
         autoplay:true,
         dots:true,
         loop:true,
-        responsive:[
+        responsive: [
             {
-                breakpoint:1024,
-                settings:{
-                    arrows:false,
-                },
+              breakpoint: 1024,
+              settings: {
+                arrows: false,
+                slidesToShow: 2,
+              },
             },
             {
-                breakpoint:480,
-                
-                    settings:{
-                        arrows:false,
-                        slidesToShow:1,
-                    },
-                },
-            
-        ],
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                slidesToShow: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                slidesToShow: 1,
+              },
+            },
+          ],
         
         prevArrow:'<button type="button" class="slick-prev"><i class="fas fa-long-arrow-alt-left"></i></button>',
         nextArrow:'<button type="button" class="slick-next"><i class="fas fa-long-arrow-alt-right"></i></button>',
